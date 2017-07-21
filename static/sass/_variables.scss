@@ -1,3 +1,13 @@
+/* Tufte CSS */
+/* Colors */
+$background-color: #fffff8;
+$text-color: #111;
+$body-font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+/* This looks really tiny */
+$body-font-size: 15px;
+$post-font-size: 15px;
+
+
 /* Colors */
 $main-color: #258fb8;
 $black: #333;
@@ -6,7 +16,9 @@ $light-gray: #dfdfdf;
 /* Typography */
 $body-font: 'sorts-mill-goudy';
 $body-font-italic: 'sorts-mill-goudy-italic';
+/*
 $body-font-size: 1.1em;
+*/
 
 $blog-title-font: 'nevis';
 $blog-title-font-size: 2.3em;
@@ -21,7 +33,9 @@ $subheading-font-weight: bold;
 $subheading-font-style: normal;
 $subheading-top-spacing: 2em;
 
+/*
 $post-font-size: 1.1em;
+*/
 $post-font-line-height: 1.7em;
 $post-align: justify;
 $post-title-font-size: 1.6em;

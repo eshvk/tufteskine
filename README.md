@@ -1,2 +1,5 @@
-#Based on moleskine2
+#tufteskine
 Pelican Theme based on [Tufte CSS](https://github.com/edwardtufte/tufte-css). 
+
+
+
