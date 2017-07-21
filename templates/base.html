@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <!-- favicon support; insert your favicon in the folder images -->
+        <link href="{{ SITEURL }}/favicon.png" rel="shortcut icon"> 
+        {% assets filters="scss", output="css/main.css", "sass/main.scss" %}
+            <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}"> 
+        {% endassets %} 
+    {% endblock head %}
+</head>
+
+<body id="index" class="home">
+    <div class="wrap">
+        <header>{% include "header.html" %}</header>
+        {% block content %}
+        {% endblock %}
+        <footer id="contentinfo" class="body">
+            Crafted by <a href="{{ SITEURL }}/pages/{{ AUTHOR |lower}}"
+         title="{{ AUTHOR }}">{{ AUTHOR }}</a>
+        </footer>
+    </div>
+</body>
+</html>
