@@ -5,8 +5,8 @@ Conversion from tufte-css to scss via http://sebastianpontow.de/css2compass/
 */
 
 //fonts
-$font_0: et-book;
-$font_1: et-book-roman-old-style;
+$et_book: et-book;
+$et_book_roman_old_style: et-book-roman-old-style;
 
 //urls
 $url_0: url(#{$font-path}/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot);
@@ -31,28 +31,28 @@ $url_18: url(#{$font-path}/et-book/et-book-roman-old-style-figures/et-book-roman
 $url_19: url(#{$font-path}/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf);
 
 @font-face {
-	font-family: $font_0;
+	font-family: $et_book;
 	src: $url_0;
 	src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype"), $url_4 format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: $font_0;
+	font-family: $et_book;
 	src: $url_5;
 	src: $url_6 format("embedded-opentype"), $url_7 format("woff"), $url_8 format("truetype"), $url_9 format("svg");
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face {
-	font-family: $font_0;
+	font-family: $et_book;
 	src: $url_10;
 	src: $url_11 format("embedded-opentype"), $url_12 format("woff"), $url_13 format("truetype"), $url_14 format("svg");
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
-	font-family: $font_1;
+	font-family: $et_book_roman_old_style;
 	src: $url_15;
 	src: $url_16 format("embedded-opentype"), $url_17 format("woff"), $url_18 format("truetype"), $url_19 format("svg");
 	font-weight: normal;

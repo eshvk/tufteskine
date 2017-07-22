@@ -1,12 +1,24 @@
 @import "bourbon/bourbon";
 @import "typography";
 @import "variables";
+
+
+/* Tufte CSS */
+
+
 body {
+    /*
     margin: 0;
     padding: 0;
-    font-size: $body-font-size;
+    */
     border-top: $top-line-weight solid $black;
     /* Tufte CSS */
+    margin-left: auto;
+    margin-right: auto;
+    width: $body-width;
+    max-width: $body-max-width;
+    padding-left: $left-padding;
+    font-size: $body-font-size;
     font-family: $body-font-family;
     /* Text Color */
     color: $text-color;
@@ -14,10 +26,69 @@ body {
     /* Tufte CSS */
 }
 
-em {
+em {  
+    /* Tufte CSS */
+    font-style: italic;
+    /*
+    Using the same font family as regular body.
     font-style: normal;
     font-family: $body-font-italic;
+    */
     }
+
+/* The main blog header */
+
+header {
+    /* Unsure of whether text-align center is needed or not? */
+    text-align: center;
+    /* Note that this .title is what tufte calls an h1. 
+       Reserving this only for title. */
+    .title {
+        font-family: $blog-title-font;
+        font-size: $blog-title-font-size;
+        text-transform: $blog-title-text-transform;
+        }
+            .subtitle {
+        font-family: $blog-subtitle-font;
+        font-size: $blog-subtitle-font-size;
+        }
+ /* turning off tufte css mod for now
+    .title { font-weight: 400;
+     margin-top: 4rem;
+     margin-bottom: 1.5rem;
+     font-size: 3.2rem;
+     line-height: 1; }
+         */
+/*
+    While tufte styles his subtitles in paragraphs. I am using just
+    the class subtitle. 
+
+
+    .subtitle { font-style: italic;
+             margin-top: 1rem;
+             margin-bottom: 1rem;
+             font-size: 1.8rem;
+             display: block;
+             line-height: 1; }
+             */
+              /* END TUFTE MOD */
+        
+    border-bottom: 1px solid $light-gray;
+    /* Is it redundant to have a link to the home as 
+    the title ? */
+    a {
+        color: $black;
+        text-decoration: none;
+        &:hover,
+        &:active {
+            color: $main-color;
+        }
+    }/* // a */
+    
+}    
+
+/* Tufte CSS */
+
 
 h2 {
     margin-top: $subheading-top-spacing;
@@ -50,30 +121,7 @@ h2 {
     }
 }
 
-/* The main blog header */
 
-header {
-    text-align: center;
-    .title {
-        font-family: $blog-title-font;
-        font-size: $blog-title-font-size;
-        text-transform: $blog-title-text-transform;
-        }
-    .subtitle {
-        font-family: $blog-subtitle-font;
-        font-size: $blog-subtitle-font-size;
-        }
-    border-bottom: 1px solid $light-gray;
-    a {
-        color: $black;
-        text-decoration: none;
-        &:hover,
-        &:active {
-            color: $main-color;
-        }
-    }/* // a */
-    
-}
 
 a {
     color: $main-color;
@@ -90,7 +138,9 @@ blockquote {
 
 article {
     padding: 0;
+        /* Tufte CSS */
 	font-size: $post-font-size;
+        /* Tufte CSS */
 	line-height: $post-font-line-height;
 	text-align: $post-align;
 	header {
@@ -98,12 +148,20 @@ article {
 		padding: 0;
 		border: 0px;
 		text-align: center;
-		h1 {
-			font-size: $post-title-font-size;		
-			font-weight: $post-title-font-weight;
-			font-style: $post-title-font-style;
-			line-height: $post-title-line-height;
-			text-align: $post-title-align;
-			}
+        /* Experimental usage of blog title and post title 
+        to look identical
+                h1 {
+            font-size: $post-title-font-size;       
+            font-weight: $post-title-font-weight;
+            font-style: $post-title-font-style;
+            line-height: $post-title-line-height;
+            text-align: $post-title-align;
+            } */
+        h1 { font-weight: 400;
+     margin-top: 4rem;
+     margin-bottom: 1.5rem;
+     font-size: 3.2rem;
+     line-height: 1; }
+
 		}
 }

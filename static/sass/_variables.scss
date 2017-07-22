@@ -2,10 +2,18 @@
 /* Colors */
 $background-color: #fffff8;
 $text-color: #111;
+
+/* Could be that content-width overrides this. I am not sure what a wrap does */
+$body-width: 87.5%;
+$body-max-width: 1400px;
+$left-padding: 12.5%;
+/* Typography */
 $body-font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$body-font-italic: et-book-italic;
 /* This looks really tiny */
 $body-font-size: 15px;
 $post-font-size: 15px;
+/* Tufte CSS */
 
 
 /* Colors */
@@ -14,18 +22,21 @@ $black: #333;
 $light-gray: #dfdfdf;
 
 /* Typography */
-$body-font: 'sorts-mill-goudy';
-$body-font-italic: 'sorts-mill-goudy-italic';
 /*
-$body-font-size: 1.1em;
+$body-font-italic: 'sorts-mill-goudy-italic';
+$body-font: 'sorts-mill-goudy';
+body-font-size: 1.1em;
+
 */
 
 $blog-title-font: 'nevis';
 $blog-title-font-size: 2.3em;
 $blog-title-text-transform: uppercase;
-
 $blog-subtitle-font: 'calluna-regular';
 $blog-subtitle-font-size: 1.4em;
+
+
+
 
 $subheadings-align: left;
 $subheading-font-size: 1.1em;
@@ -50,6 +61,7 @@ $blockquote-font-size: 1em;
 /* Layout */
 
 /* Width of the content area */
+
 $content-width: 45%;
 
 /* Space between the date and the post */
