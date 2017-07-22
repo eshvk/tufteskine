@@ -12,10 +12,13 @@
 </head>
 
 <body id="index" class="home">
-    <div class="wrap">
-        <header>{% include "header.html" %}</header>
+<!--     <div class="wrap">
+Moved the header tag out of here and put it just in the index.
+ -->      
         {% block content %}
         {% endblock %}
+    <!-- Now only footer should be aligned centered -->    
+    <div class="wrap">
         <footer id="contentinfo" class="body">
             Crafted by <a href="{{ SITEURL }}/pages/{{ AUTHOR |lower}}"
          title="{{ AUTHOR }}">{{ AUTHOR }}</a>
