@@ -58,13 +58,6 @@ $url_19: url(#{$font-path}/et-book/et-book-roman-old-style-figures/et-book-roman
 	font-weight: normal;
 	font-style: normal;
 }
-
-
-@include font-face('sorts-mill-goudy', '#{$font-path}GoudyStM-webfont');
-@include font-face('sorts-mill-goudy-italic', '#{$font-path}GoudyStM-Italic-webfont');
-@include font-face('museo-sans', '#{$font-path}MuseoSans');
-@include font-face('sofia-pro-light', '#{$font-path}SofiaProLight-webfont');
-@include font-face('bookletter', '#{$font-path}goudy_bookletter_1911-webfont');
-@include font-face('governor', '#{$font-path}governor-webfont');
+/* Title and subtitle fonts */
 @include font-face('nevis', '#{$font-path}nevis-webfont');
 @include font-face('calluna-regular', '#{$font-path}Calluna-Regular-webfont');

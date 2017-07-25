@@ -13,6 +13,7 @@ Pelican Theme based on [Tufte CSS](https://github.com/edwardtufte/tufte-css).
 - I have decided to go with the weird and empty look. Rationale. Some articles will be generated via rStudio and it is going to be fairly expensive to get that shit incorporated with the title. 
 - Currently I have added almost all elements of the tufte css into an article. However, the article font now looks almost identical to [here](https://edwardtufte.github.io/tufte-css/). However the entire page itself looks weird. Perhaps because it is one long section. I need to figure out how to add sections in markdown and for them to go into blog sections. 
 - I have modified the block quotes to be identical with Tufte. 
+- I have fixed the footer. Cleaned up a lot of the old code.  
 - TODO. Get ETBembo font. 
 
 ## References
